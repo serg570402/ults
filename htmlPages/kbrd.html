@@ -1,0 +1,247 @@
+<section id="kbrd" class="container">
+  <header>
+    <button id="whatHow">What?&How?(show)</button>
+    <h2>Learn Alphabet</h2>
+    <ul class="whatHow" style="display: none">
+      <li>
+        Whatever alphabet you learn, the input language must be English (en)
+      </li>
+      <li>Select the target language</li>
+      <li>
+        Press the key on the physical keyboard corresponding to the highlighted
+        letter on the screen.
+      </li>
+      <li>Do the same with the next highlighted letter and so on.</li>
+      <li>
+        Use the buttons above the screen keyboad to make the task more
+        challenging.
+      </li>
+      <li>
+        Click on letters on the keyboard to create a set of letter you want to
+        learn right now.
+      </li>
+      <li>
+        To LISTEN to the highlighted letter again press ENTER on the physical
+        keyboard
+      </li>
+    </ul>
+    <p id="tip" style="display: none"></p>
+  </header>
+  <div id="kbrd-controls" class="control" style="display: none">
+    <button data-1="Sorted" data-2="Random" class="cl_1" id="random">
+      Sorted
+    </button>
+    <!-- data-1="Hilight"
+    data-2="No Hilight" -->
+    <button class="hilight cl_1" id="hilight">[a]</button>
+    <button data-1="Visible" data-2="Hidden" class="cl_1" id="visible">
+      Visible
+    </button>
+    <button
+      data-1="🔊"
+      data-2="🔇"
+      class="cl_1"
+      style="scale: 1; margin: 0 0.4rem"
+      id="mute1"
+    >
+      🔊
+    </button>
+    <button data-1="All ON" data-2="All OFF" class="cl_1" id="onOff">
+      All IN
+    </button>
+    <button
+      data-1="あ"
+      data-2="ア"
+      class="cl_1"
+      id="hiraKata"
+      style="display: none"
+    >
+      あ
+    </button>
+    <button class="cl_1" id="flash" data-2="a" data-1="&#9000;">&#9000;</button>
+  </div>
+  <div class="kbrd-cntnr">
+    <div class="row">
+      <p class="key">
+        <span id="k_96" class="char"> `~</span>
+      </p>
+      <p class="key">
+        <span id="k_49" class="char">1</span>
+      </p>
+      <p class="key">
+        <span id="k_50" class="char">2</span>
+      </p>
+      <p class="key">
+        <span id="k_51" class="char">3</span>
+      </p>
+      <p class="key">
+        <span id="k_52" class="char">4</span>
+      </p>
+      <p class="key">
+        <span id="k_53" class="char">5</span>
+      </p>
+      <p class="key">
+        <span id="k_54" class="char">6</span>
+      </p>
+      <p class="key">
+        <span id="k_55" class="char">7</span>
+      </p>
+      <p class="key">
+        <span id="k_56" class="char">8</span>
+      </p>
+      <p class="key">
+        <span id="k_57" class="char">9</span>
+      </p>
+      <p class="key">
+        <span id="k_48" class="char">0</span>
+        <span id="k_41" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_45" class="char">-</span>
+      </p>
+      <p class="key">
+        <span id="k_61" class="char">=</span>
+      </p>
+      <div id="backspace" class="fkey">Backspace</div>
+    </div>
+    <div class="row">
+      <div id="tab" class="fkey">Tab</div>
+      <p class="key">
+        <span id="k_113" class="char"></span>
+        <span id="k_81" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_119" class="char"></span>
+        <span id="k_87" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_101" class="char"></span>
+        <span id="k_69" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_114" class="char"></span>
+        <span id="k_82" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_116" class="char"></span>
+        <span id="k_84" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_121" class="char"></span>
+        <span id="k_89" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_117" class="char"></span>
+        <span id="k_85" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_105" class="char"></span>
+        <span id="k_73" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_111" class="char"></span>
+        <span id="k_79" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_112" class="char"></span>
+        <span id="k_80" class="char second"></span>
+      </p>
+      <p class="key">
+        <span id="k_91" class="char">[</span>
+      </p>
+      <p class="key">
+        <span id="k_93" class="char">]</span>
+      </p>
+      <p class="skey key">
+        <span id="k_92" class="char">\|</span>
+      </p>
+    </div>
+    <div class="row">
+      <div id="capslock" class="fkey">CapsLock</div>
+      <p class="key">
+        <span id="k_97" class="char" data-id=""></span>
+      </p>
+      <p class="key">
+        <span id="k_115" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_100" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_102" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_103" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_104" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_106" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_107" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_108" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_59" class="char">;</span>
+      </p>
+      <p class="key">
+        <span id="k_39" class="char">'</span>
+      </p>
+      <div id="enter" class="fkey">Enter</div>
+    </div>
+    <div class="row">
+      <div id="shift-l" class="fkey">Shift</div>
+      <p class="key">
+        <span id="k_122" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_120" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_99" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_118" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_98" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_110" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_109" class="char"></span>
+      </p>
+      <p class="key">
+        <span id="k_44" class="char">,</span>
+      </p>
+      <p class="key">
+        <span id="k_46" class="char">.</span>
+      </p>
+      <p class="key">
+        <span id="k_47" class="char">/</span>
+      </p>
+      <div id="shift-r" class="fkey">Shift</div>
+    </div>
+    <div class="row">
+      <div id="ctrl-l" class="bottom fkey">Ctrl</div>
+      <div id="system-l" class="bottom fkey">System</div>
+      <div id="alt-l" class="bottom fkey">Alt</div>
+      <div id="space" class="fkey">
+        <input type="text" id="char" placeholder="MUST BE FOCUSED!!!" />
+      </div>
+      <div id="alt-r" class="bottom fkey">Alt</div>
+      <div id="system-r" class="bottom fkey">System</div>
+      <div id="app" class="bottom fkey">Apps</div>
+      <div id="ctrl-r" class="bottom fkey">Ctrl</div>
+    </div>
+    <div class="flashCard" style="display: none">
+      <span id="flashCard2"></span>
+      <span id="flashCard"></span>
+    </div>
+  </div>
+</section>
